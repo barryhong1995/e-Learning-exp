@@ -1,0 +1,596 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+        <title>e-Learning Test</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Description" lang="en" content="e-Learning Test">
+        <meta name="Author" content="Hung Hong">
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+        <!-- Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div id="banner">
+			<h1>SAMPLE E-LEARNING SERVICE</h1>
+		</div>
+		<div id="studyContent" name="studyContent">
+			<div class="tab">
+			  	<button class="tablinks" onclick="openLesson(event, 'lesson1')">Lesson 1</button>
+			  	<button class="tablinks" onclick="openLesson(event, 'lesson2')">Lesson 2</button>
+			</div>
+			<div id="lesson1" class="tabcontent">
+				<div name="title">
+					<h2>The Solar System</h2>
+				</div>
+				<div name="content" class="slideshow-container" id="lesson_slide1">
+					<div class="mySlides">
+						<div class="image_side">
+							<img class="image_side_content" src="img/1_1.jpg">
+						</div>
+						<div class="text_side">
+							<h2>Terrestrial Planets</h2>
+							The Solar System consists of the Sun and the astronomical objects gravitationally bound in orbit around it, all of which formed from the collapse of a giant molecular cloud approximately 4.6 billion years ago.
+							<br>
+							<br>
+							The four inner or terrestrial planets have dense, rocky compositions, few or no moons, and no ring systems. They are composed largely from refractory minerals, such as the silicates, which form their crusts and metals such as iron and nickel, which form their cores.
+							<br>
+							<br>
+							3 of 4 inner planets (Venus, Earth and Mars) have atmospheres substantial enough to generate weatherl all have impact craters and tectonic surface features such as rift valleys and volcanoes. The term inner planet should not be confused with inferior planet, which designates those planets that are closer to the Sun than Earth is (i.e. Mercury and Venus).
+						</div>
+					</div>
+					<div class="mySlides">
+						<div class="image_side">
+							<img class="image_side_content" src="img/1_mercury.png">
+						</div>
+						<div class="text_side">
+							<h2>Terrestrial Planets - Details</h2>
+							<h3>Mercury</h3>
+							Mercury (0.4 AU from the Sun) is the closest planet to the Sun and the smallest planet in the Solar System (0.055 Earth masses).
+							<br>
+							<br>
+							Mercury has no natural satellites, and its only known geologicalfeatures besides impact craters are lobed ridges or rupes, probably produced by a period of contraction early in its history. Mercury's almost negligible atmosphere consists of atoms blasted off its surface by the solar wind.
+							<br>
+							<br>
+							Its relatively large iron core and thin mantle have not yet been adequately explained. Hypotheses include that its outer layers were stripped off by a giant impact, and that it was prevented from fully accreting by the youn Sun's energy.
+						</div>
+					</div>
+					<div class="mySlides">
+						<div class="image_side">
+							<img class="image_side_content" src="img/1_venus.png">
+						</div>
+						<div class="text_side">
+							<h2>Terrestrial Planets - Details</h2>
+							<h3>Venus</h3>
+							Venus (0.7 AU from the Sun) is the close in size to Earth, has a thick silicate mantle around an iron core, a substantial atmosphere and evidence of internal geological activity.
+							<br>
+							<br>
+							However it is much direr than Earth and its atmosphere is ninety times as dense. Venus has no natural satellites. It is the hottenst planet, with the surface temperatures over 400 degree Celsius, most likely due to the amount of greenhouse gases in the atmosphere.
+							<br>
+							<br>
+							No definitive evidence of current geological activity has been detected on Veus, but it has no magnetic field that would prevent depletion of its substantial atmosphere, which suggests that its atmosphere is regularly replenished by volcanic eruptions.
+						</div>
+					</div>
+					<div class="mySlides">
+						<div class="image_side">
+							<img class="image_side_content" src="img/1_earth.png">
+						</div>
+						<div class="text_side">
+							<h2>Terrestrial Planets - Details</h2>
+							<h3>Earth</h3>
+							Earth (1 AU from the Sun) is the largest and densest of the inner planets, the only one known to have current geological activity, and it is the only place in the Solar System where life is known to exist.
+							<br>
+							<br>
+							Its liquid hydrosphere is unique among the terrestrial planets, and it is also the only planet where plate tectonics has been observed.
+							<br>
+							<br>
+							Earth's atmosphere is radically different from those of the other planets, having been altered by the presence of life to contain 21% free oxygen. It has one natural satellite, the Moon, the only large satellite of a terrestrial planet in the Solar System.
+						</div>
+					</div>
+					<div class="mySlides">
+						<div class="image_side">
+							<img class="image_side_content" src="img/1_mars.png">
+						</div>
+						<div class="text_side">
+							<h2>Terrestrial Planets - Details</h2>
+							<h3>Mars</h3>
+							Mars (1.5 AU from the Sun) is smaller than Earth and Venus (0.107 Earth masses).
+							<br>
+							<br>
+							It possesses an atmosphere of mostly carbon dioxide with a surface pressure of 6.1 millibars (roughly 0.6 percent that of the Earth's).
+							<br>
+							<br>
+							Its surface, peppered with vast volcanoes such as Olympus Mons and rift valleys such as Valleys Marineris, show geological activitity that may have persisted until as recently as 2 million years ago.
+							<br>
+							<br>
+							its red colour comes from iron oxide (rust) in its soil. Mars has two tiny natural satellites (Delmos and Phobos) thought to be captured asteroids.
+						</div>
+					</div>
+					<div class="mySlides">
+						<div class="image_side">
+							<img class="image_side_content" src="img/1_2.jpg">
+						</div>
+						<div class="text_side">
+							<h2>Outer Planets / Gas Giants</h2>
+							The four outer planets, or gas giants (sometimes called Jovian planets), collectively make up 99 percent of the mass known to orbit the Sun. Jupiter and Saturn are each many tens of times the mass of the Earth and consist overwhelmingly of hydrogen and helium; Uranus and Neptune are far less massive (<20 Earth masses) and possesses more ices in their makeup.
+							<br>
+							<br>
+							<button id="btn_showQuiz1" onclick="loadQuiz(1)">Show Quiz</button>
+						</div>
+					</div>
+					<!-- Next/prev buttons -->
+				  	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				  	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<!-- Dots/bullets/indicators -->
+				<div class="dot-container" id="lesson_slidedot1">
+				  	<span class="dot" onclick="currentSlide(1)"></span>
+				  	<span class="dot" onclick="currentSlide(2)"></span>
+				  	<span class="dot" onclick="currentSlide(3)"></span>
+				  	<span class="dot" onclick="currentSlide(4)"></span>
+				  	<span class="dot" onclick="currentSlide(5)"></span>
+				  	<span class="dot" onclick="currentSlide(6)"></span>
+				</div>
+				<div id="quiz1" class="quiz slideshow-container" id="quiz_slide1">
+					<div class="myQuizSlides">
+						<h3>Question 1</h3>
+						Arrange the following planets in the correct order, starting from the closest to the Sun:
+						<br>
+						<b>Neptune / Mars / Earth / Uranus / Mercury / Venus / Saturn / Jupiter</b>
+						<br>
+						1: <input type="text" id="p1_1_1"><br>
+						2: <input type="text" id="p1_1_2"><br>
+						3: <input type="text" id="p1_1_3"><br>
+						4: <input type="text" id="p1_1_4"><br>
+						5: <input type="text" id="p1_1_5"><br>
+						6: <input type="text" id="p1_1_6"><br>
+						7: <input type="text" id="p1_1_7"><br>
+						8: <input type="text" id="p1_1_8"><br>
+						<br>
+						<button id="submit1_1" onclick="submitQuiz1(1)">Submit</button>  <b class="status" id="p1_1_status">DONE</b>
+					</div>
+					<div class="myQuizSlides">
+						<h3>Question 2</h3>
+						Select the four inner planets of the Solar System: <br>
+						<input type="checkbox" id="p1_2_1" value="Jupiter">Jupiter<br>
+						<input type="checkbox" id="p1_2_2" value="Mercury">Mercury<br>
+						<input type="checkbox" id="p1_2_3" value="Earth">Earth<br>
+						<input type="checkbox" id="p1_2_4" value="Uranus">Uranus<br>
+						<input type="checkbox" id="p1_2_5" value="Mars">Mars<br>
+						<input type="checkbox" id="p1_2_6" value="Venus">Venus<br>
+						<br>
+						<button id="submit1_2" onclick="submitQuiz1(2)">Submit</button> <b class="status" id="p1_2_status">DONE</b>
+					</div>
+					<div class="myQuizSlides">
+						<h3>Question 3</h3>
+						The only satellite of the Earth is ... <br>
+						<input type="text" id="p1_3"><br>
+						<br>
+						<button id="submit1_3" onclick="submitQuiz1(3)">Submit</button> <b class="status" id="p1_3_status">DONE</b>
+					</div>
+					<div class="myQuizSlides">
+						<h3>Question 4</h3>
+						Fill in the blank fields below: <br>
+						Jupiter, Saturn, Uranus and Neptune are the four  <input type="text" id="p1_4_1"> planets or gas giants. All four of them have rings, but the ring system of <input type="text" id="p1_4_2"> is the only one that is easily observed from Earth.<br>
+						<br>
+						<button id="submit1_4" onclick="submitQuiz1(4)">Submit</button> <b class="status" id="p1_4_status">DONE</b>
+					</div>
+					<div class="myQuizSlides">
+						<h3>THIS IS THE END OF THE QUIZ!</h3>
+						Make sure you complete all the questions before pressing the <b>Complete Quiz</b> button.<br>
+						<br>
+						<button id="submit1_complete" onclick="completeQuiz(1)">Complete Quiz</button> <b class="status" id="p1_complete_status">Quiz is now completed. Thank you.</b>
+					</div>
+					<!-- Next/prev buttons -->
+				  	<a class="prev" onclick="plusQuizSlides(-1)">&#10094;</a>
+				  	<a class="next" onclick="plusQuizSlides(1)">&#10095;</a>
+				</div>
+			</div>
+			<div id="lesson2" class="tabcontent">
+				<div name="title">
+					<h2>Columbus Day</h2>
+				</div>
+				<div name="content" class="slideshow-container" id="lesson_slide2">
+					<div class="mySlides">
+						<div class="image_side">
+							<img class="image_side_content" src="img/2_1.jpg">
+						</div>
+						<div class="text_side">
+							<h2>Background</h2>
+							<h3>Christopher Columbus</h3>
+							Christopher Columbus was born in October 1451 and died at the age of 55. He was an explorer, navigator, and colonizer, raised in the Republic of Genoa, in present day northwestern Italy.
+							<br>
+							<br>
+							He studied astronomy, mathematics, navigation and cartography, and believed that he could change the world.
+							<br>
+						</div>
+					</div>
+					<div class="mySlides">
+						<div class="image_side">
+							<img class="image_side_content" src="img/2_2.jpg">
+						</div>
+						<div class="text_side">
+							<h2>History</h2>
+							<h3>The Journey</h3>
+							At the end of the 15th century, it was practically infeasible to travel from Europe to Asia by land. To solve that problem Portuguese explorers took the sea route. It ran along the West African coast and around the cape of Good Hope. Columbus came up with a completely different idea: instead of sailing around the African continent, why not sail west across the Atlantic ocean.
+							<br>
+							<br>
+							Spanish rulers, motivated by the quest for treasure supported Columbus's pursuit and funded his voyage. However, Columbus assumed incorrectly. He thought that the circunference of the Earth was much smaller than it really was.
+						</div>
+					</div>
+					<div class="mySlides">
+						<div class="image_side">
+							<img class="image_side_content" src="img/2_3.jpg">
+						</div>
+						<div class="text_side">
+							<h2>History</h2>
+							<h3>The Journey (cont.)</h3>
+							On October 12, 1492, the ships landed not in Asia, as Columbus initially believed, but on one of the Bahamian islands.
+							<br>
+							<br>
+							Searching for "pearls, precious stones, gold, silver, spices, and other objects and merchandise whatsoever," Columbus continued sailing to different Caribbean islands for months. After not finding the sought after treasure he returned to Spain in March 1493. Though Christopher Columbus was not the first to visit the "New World" and did not "discover" the Americas, his journey inspired further exploration of the American continents.
+						</div>
+					</div>
+					<div class="mySlides">
+						<div class="image_side">
+							<img class="image_side_content" src="img/2_4.jpg">
+						</div>
+						<div class="text_side">
+							<h2>Present</h2>
+							<h3>Columbus Day Celebration</h3>
+							Even though Columbus Day became officially a federal holiday only in 1937, Columbus' voyage has been celebrated since the colonial period.
+							<br>
+							<br>
+							In 1892, President Benhamin Harrison decreed to mark the 400th anniversary of Columbus' landing in the "New World" with pariotic festivities, writing...
+							<br>
+							<br>
+							<i>"On that day let the people, so far as possible, cease from toil and devote themselves to such exercises as may best express honor to the discoverer and their appreciation of the great achievements of the four completed centuries of American life"</i>
+							<br>
+							<br>
+							Since 1971, this holiday is celebrated on the second Monday in October. Different parts of the United States celebrate Columbus Day in defferent ways. Most states celebrate it as an official state holiday, while others may not recognize it at all.
+							<ul>
+								<li>San Francisco claims the nation's oldest continuously existing celebration with its Italian-American community's annual Columbus Day Parade, which was established by Nicola Larco in 1868.</li>
+								<li>As in mainlain USA, Columbus Day is a legal holiday in the U.S. territories of Puerto Rico and US Virgin Isalnds. This day is celebrated as both Columbus Day and Puerto Rico Friendship Day.</li>
+								<li>Virginia also celebrates two legal holidays on this day, Columbus Day and Yorktown Victory Day, which honors the final victory at the Siege of Yorktown in the Revolutionary War.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="mySlides">
+						<div class="image_side">
+							<img class="image_side_content" src="img/2_5.jpg">
+						</div>
+						<div class="text_side">
+							<h2>Present</h2>
+							<h3>Who doesn't celebrate Columbus Day?</h3>
+							Hawaii, Alaska, and South Dakota are the three U.S. states that do not recognize Columbus Day at all. However, Hawaii and South Dakota mark the day with as an alternative holiday or observance.
+							<ul>
+								<li>Hawaii celebrates Discoverers' Day, which commemorates the Polynesian discoverers of Hawaii on the same date, the second Monday of October.</li>
+								<li>South Dakota celebrates the day as an official state holiday known as "Native Maerican Day", rather than Columbus Day.</li>
+							</ul>
+							<br>
+							<br>
+							<button id="btn_showQuiz2" onclick="loadQuiz(2)">Show Quiz</button>
+						</div>
+					</div>
+					<!-- Next/prev buttons -->
+				  	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				  	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<!-- Dots/bullets/indicators -->
+				<div class="dot-container" id="lesson_slidedot2">
+				  	<span class="dot" onclick="currentSlide(7)"></span>
+				  	<span class="dot" onclick="currentSlide(8)"></span>
+				  	<span class="dot" onclick="currentSlide(9)"></span>
+				  	<span class="dot" onclick="currentSlide(10)"></span>
+				  	<span class="dot" onclick="currentSlide(11)"></span>
+				</div>
+				<div id="quiz2" class="quiz slideshow-container" id="quiz_slide2">
+					<div class="myQuizSlides">
+						<h3>Question 1</h3>
+						Who was Christopher Columbus?
+						<br>
+						<input type="checkbox" id="p2_1_1" value="Explorer">Explorer<br>
+						<input type="checkbox" id="p2_1_2" value="Detective">Detective<br>
+						<input type="checkbox" id="p2_1_3" value="Writer">Writer<br>
+						<input type="checkbox" id="p2_1_4" value="Navigator">Navigator<br>
+						<input type="checkbox" id="p2_1_5" value="Colonizer">Colonizer<br>
+						<br>
+						<button id="submit2_1" onclick="submitQuiz2(1)">Submit</button>  <b class="status" id="p2_1_status">DONE</b>
+					</div>
+					<div class="myQuizSlides">
+						<h3>Question 2</h3>
+						Columbus was the very first person to visit the "New World".
+						<form>
+							<input type="radio" name="p2_2" value="Yes">Yes<br>
+							<input type="radio" name="p2_2" value="No">No<br>
+							<br>
+							<button id="submit2_2" onclick="submitQuiz2(2)">Submit</button>  <b class="status" id="p2_2_status">DONE</b>
+						</form>
+					</div>
+					<div class="myQuizSlides">
+						<h3>Question 3</h3>
+						Choose one correct answer in each drop-down list
+						<br>
+						<i>Despite the fact that Christopher Columbus 
+						<select id="p2_3_1">
+							<option value="was">was</option>
+						  	<option value="wasn't">wasn't</option>
+						</select>
+						the first to visit
+						<select id="p2_3_2">
+							<option value="China">China</option>
+						  	<option value="India">India</option>
+						  	<option value="Africa">Africa</option>
+						  	<option value="the 'New World'">the 'New World'</option>
+						</select>
+						and "discover" the Americas, his journey kicked off the
+						<select id="p2_3_3">
+							<option value="exploration">exploration</option>
+						  	<option value="consolidation">consolidation</option>
+						  	<option value="deterioration">deterioration</option>
+						</select>
+						on the American continents.</i>
+						<br>
+						<br>
+						<button id="submit2_3" onclick="submitQuiz2(3)">Submit</button>  <b class="status" id="p2_3_status">DONE</b>
+					</div>
+					<div class="myQuizSlides">
+						<h3>Question 4</h3>
+						What are the three states that do not recognize Columbus Day at all?
+						<br>
+						<input type="text" id="p2_4_1"><br>
+						<input type="text" id="p2_4_2"><br>
+						<input type="text" id="p2_4_3"><br>
+						<br>
+						<button id="submit2_4" onclick="submitQuiz2(4)">Submit</button>  <b class="status" id="p2_4_status">DONE</b>
+					</div>
+					<div class="myQuizSlides">
+						<h3>THIS IS THE END OF THE QUIZ!</h3>
+						Make sure you complete all the questions before pressing the <b>Complete Quiz</b> button.<br>
+						<br>
+						<button id="submit2_complete" onclick="completeQuiz(2)">Complete Quiz</button> <b class="status" id="p2_complete_status">Quiz is now completed. Thank you.</b>
+					</div>
+					<!-- Next/prev buttons -->
+				  	<a class="prev" onclick="plusQuizSlides(-1)">&#10094;</a>
+				  	<a class="next" onclick="plusQuizSlides(1)">&#10095;</a>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div id="aboutAndSurvey">
+			<div id="instruction">
+				<h2>INSTRUCTION:</h2>
+				<ul>
+					<li>Participants are required to go through 2 lessons by clicking the tabs on top of the page.</li>
+					<li>At the end of each lesson, participant will be prompted to complete a short quiz, relating to the content of the lesson.</li>
+					<li>There are several formats for the type of questions asked. Once done, participants are required to press "Submit" to save their answers.</li>
+					<li>At the end of the quiz, participants are required to press "Complete Quiz" in order to finish a lesson.</li>
+					<li>After finishing both lessons, participants are to fill up the short survey form below.</li>
+				</ul>
+			</div>
+			<div id="survey">
+				<h2>SURVEY</h2>
+				<button id="btnSurvey" onclick="loadSurvey()">View Survey (Required both lessons to be completed)</button>
+				<div id="surveyContent">
+					<h3>E-LEARNING PLATFORM IN GENERAL</h3>
+					<h4>Question 1:</h4>
+					Using e-learning can improve my learning performance.
+					<br>
+					<form id="s_1">
+						Disagree <input type="radio" name="s_1" value="1"> <input type="radio" name="s_1" value="2"> <input type="radio" name="s_1" value="3"> <input type="radio" name="s_1" value="4"> <input type="radio" name="s_1" value="5"> <input type="radio" name="s_1" value="6"> Agree
+					</form>
+					<h4>Question 2:</h4>
+					I find e-learning to be useful to me.
+					<br>
+					<form id="s_2">
+						Disagree <input type="radio" name="s_2" value="1"> <input type="radio" name="s_2" value="2"> <input type="radio" name="s_2" value="3"> <input type="radio" name="s_2" value="4"> <input type="radio" name="s_2" value="5"> <input type="radio" name="s_2" value="6"> Agree
+					</form>
+					<h4>Question 3:</h4>
+					Learning to operate the e-learning system is easy for me.
+					<br>
+					<form id="s_3">
+						Disagree <input type="radio" name="s_3" value="1"> <input type="radio" name="s_3" value="2"> <input type="radio" name="s_3" value="3"> <input type="radio" name="s_3" value="4"> <input type="radio" name="s_3" value="5"> <input type="radio" name="s_3" value="6"> Agree
+					</form>
+					<h4>Question 4:</h4>
+					The e-learning system is easy to use.
+					<br>
+					<form id="s_4">
+						Disagree <input type="radio" name="s_4" value="1"> <input type="radio" name="s_4" value="2"> <input type="radio" name="s_4" value="3"> <input type="radio" name="s_4" value="4"> <input type="radio" name="s_4" value="5"> <input type="radio" name="s_4" value="6"> Agree
+					</form>
+					<h4>Question 5:</h4>
+					Using e-learning is a good idea.
+					<br>
+					<form id="s_5">
+						Disagree <input type="radio" name="s_5" value="1"> <input type="radio" name="s_5" value="2"> <input type="radio" name="s_5" value="3"> <input type="radio" name="s_5" value="4"> <input type="radio" name="s_5" value="5"> <input type="radio" name="s_5" value="6"> Agree
+					</form>
+					<h4>Question 6:</h4>
+					It is desirable to use e-learning.
+					<br>
+					<form id="s_6">
+						Disagree <input type="radio" name="s_6" value="1"> <input type="radio" name="s_6" value="2"> <input type="radio" name="s_6" value="3"> <input type="radio" name="s_6" value="4"> <input type="radio" name="s_6" value="5"> <input type="radio" name="s_6" value="6"> Agree
+					</form>
+					<h4>Question 7:</h4>
+					Using e-learning is pleasurable.
+					<br>
+					<form id="s_7">
+						Disagree <input type="radio" name="s_7" value="1"> <input type="radio" name="s_7" value="2"> <input type="radio" name="s_7" value="3"> <input type="radio" name="s_7" value="4"> <input type="radio" name="s_7" value="5"> <input type="radio" name="s_7" value="6"> Agree
+					</form>
+					<h4>Question 8:</h4>
+					I find using e-learning to be interesting.
+					<br>
+					<form id="s_8">
+						Disagree <input type="radio" name="s_8" value="1"> <input type="radio" name="s_8" value="2"> <input type="radio" name="s_8" value="3"> <input type="radio" name="s_8" value="4"> <input type="radio" name="s_8" value="5"> <input type="radio" name="s_8" value="6"> Agree
+					</form>
+					<h4>Question 9:</h4>
+					I will use the e-learning system on a regular basis in the future.
+					<br>
+					<form id="s_9">
+						Disagree <input type="radio" name="s_9" value="1"> <input type="radio" name="s_9" value="2"> <input type="radio" name="s_9" value="3"> <input type="radio" name="s_9" value="4"> <input type="radio" name="s_9" value="5"> <input type="radio" name="s_9" value="6"> Agree
+					</form>
+					<h4>Question 10:</h4>
+					I will strongly recommend that others use it.
+					<br>
+					<form id="s_10">
+						Disagree <input type="radio" name="s_10" value="1"> <input type="radio" name="s_10" value="2"> <input type="radio" name="s_10" value="3"> <input type="radio" name="s_10" value="4"> <input type="radio" name="s_10" value="5"> <input type="radio" name="s_10" value="6"> Agree
+					</form>
+					<h3>PRESENTATION OF QUESTIONS</h3>
+					<h4>Question 11:</h4>
+					What type of question do you prefer the most?
+					<br>
+					<form id="s_11">
+						<input type="radio" name="s_11" value="multiChoice">Multiple Choice - can only choose 1<br>
+						<input type="radio" name="s_11" value="multiSelect">Multiple Select - can choose more than 1<br>
+						<input type="radio" name="s_11" value="dropdownBox">Dropdown Box - prefilled list of responses<br>
+						<input type="radio" name="s_11" value="freeRespSingle">Free Response - 1 answer field<br>
+						<input type="radio" name="s_11" value="freeRespMulti">Free Response - multiple answer fields<br>
+					</form>
+					<h4>Question 12:</h4>
+					What type of question do you prefer the least?
+					<br>
+					<form id="s_12">
+						<input type="radio" name="s_12" value="multiChoice">Multiple Choice - can only choose 1<br>
+						<input type="radio" name="s_12" value="multiSelect">Multiple Select - can choose more than 1<br>
+						<input type="radio" name="s_12" value="dropdownBox">Dropdown Box - prefilled list of responses<br>
+						<input type="radio" name="s_12" value="freeRespSingle">Free Response - 1 answer field<br>
+						<input type="radio" name="s_12" value="freeRespMulti">Free Response - multiple answer fields<br>
+					</form>
+					<h4>Question 13:</h4>
+					What type of question is the easiest to understand?
+					<br>
+					<form id="s_13">
+						<input type="radio" name="s_13" value="multiChoice">Multiple Choice - can only choose 1<br>
+						<input type="radio" name="s_13" value="multiSelect">Multiple Select - can choose more than 1<br>
+						<input type="radio" name="s_13" value="dropdownBox">Dropdown Box - prefilled list of responses<br>
+						<input type="radio" name="s_13" value="freeRespSingle">Free Response - 1 answer field<br>
+						<input type="radio" name="s_13" value="freeRespMulti">Free Response - multiple answer fields<br>
+					</form>
+					<h4>Question 14:</h4>
+					What type of question is the hardest to understand?
+					<br>
+					<form id="s_14">
+						<input type="radio" name="s_14" value="multiChoice">Multiple Choice - can only choose 1<br>
+						<input type="radio" name="s_14" value="multiSelect">Multiple Select - can choose more than 1<br>
+						<input type="radio" name="s_14" value="dropdownBox">Dropdown Box - prefilled list of responses<br>
+						<input type="radio" name="s_14" value="freeRespSingle">Free Response - 1 answer field<br>
+						<input type="radio" name="s_14" value="freeRespMulti">Free Response - multiple answer fields<br>
+					</form>
+					<h4>Question 15:</h4>
+					What type of question is the easiest to provide answer?
+					<br>
+					<form id="s_15">
+						<input type="radio" name="s_15" value="multiChoice">Multiple Choice - can only choose 1<br>
+						<input type="radio" name="s_15" value="multiSelect">Multiple Select - can choose more than 1<br>
+						<input type="radio" name="s_15" value="dropdownBox">Dropdown Box - prefilled list of responses<br>
+						<input type="radio" name="s_15" value="freeRespSingle">Free Response - 1 answer field<br>
+						<input type="radio" name="s_15" value="freeRespMulti">Free Response - multiple answer fields<br>
+					</form>
+					<h4>Question 16:</h4>
+					What type of question is the hardest to provide answer?
+					<br>
+					<form id="s_16">
+						<input type="radio" name="s_16" value="multiChoice">Multiple Choice - can only choose 1<br>
+						<input type="radio" name="s_16" value="multiSelect">Multiple Select - can choose more than 1<br>
+						<input type="radio" name="s_16" value="dropdownBox">Dropdown Box - prefilled list of responses<br>
+						<input type="radio" name="s_16" value="freeRespSingle">Free Response - 1 answer field<br>
+						<input type="radio" name="s_16" value="freeRespMulti">Free Response - multiple answer fields<br>
+					</form>
+					<h4>Question 17:</h4>
+					What type of question do you want to have more?
+					<br>
+					<form id="s_17">
+						<input type="radio" name="s_17" value="multiChoice">Multiple Choice - can only choose 1<br>
+						<input type="radio" name="s_17" value="multiSelect">Multiple Select - can choose more than 1<br>
+						<input type="radio" name="s_17" value="dropdownBox">Dropdown Box - prefilled list of responses<br>
+						<input type="radio" name="s_17" value="freeRespSingle">Free Response - 1 answer field<br>
+						<input type="radio" name="s_17" value="freeRespMulti">Free Response - multiple answer fields<br>
+					</form>
+					<h4>Question 18:</h4>
+					What type of question do you want to have less?
+					<br>
+					<form id="s_18">
+						<input type="radio" name="s_18" value="multiChoice">Multiple Choice - can only choose 1<br>
+						<input type="radio" name="s_18" value="multiSelect">Multiple Select - can choose more than 1<br>
+						<input type="radio" name="s_18" value="dropdownBox">Dropdown Box - prefilled list of responses<br>
+						<input type="radio" name="s_18" value="freeRespSingle">Free Response - 1 answer field<br>
+						<input type="radio" name="s_18" value="freeRespMulti">Free Response - multiple answer fields<br>
+					</form>
+					<h4>Question 19:</h4>
+					What type of question do you find the most pleasurable?
+					<br>
+					<form id="s_19">
+						<input type="radio" name="s_19" value="multiChoice">Multiple Choice - can only choose 1<br>
+						<input type="radio" name="s_19" value="multiSelect">Multiple Select - can choose more than 1<br>
+						<input type="radio" name="s_19" value="dropdownBox">Dropdown Box - prefilled list of responses<br>
+						<input type="radio" name="s_19" value="freeRespSingle">Free Response - 1 answer field<br>
+						<input type="radio" name="s_19" value="freeRespMulti">Free Response - multiple answer fields<br>
+					</form>
+					<h4>Question 20:</h4>
+					What type of question do you find the least pleasurable?
+					<br>
+					<form id="s_20">
+						<input type="radio" name="s_20" value="multiChoice">Multiple Choice - can only choose 1<br>
+						<input type="radio" name="s_20" value="multiSelect">Multiple Select - can choose more than 1<br>
+						<input type="radio" name="s_20" value="dropdownBox">Dropdown Box - prefilled list of responses<br>
+						<input type="radio" name="s_20" value="freeRespSingle">Free Response - 1 answer field<br>
+						<input type="radio" name="s_20" value="freeRespMulti">Free Response - multiple answer fields<br>
+					</form>
+					<h3>GENERAL PERSONAL INFORMATION</h3>
+					<h4>Question 21:</h4>
+					How old are you? 
+					<select id="s_21">
+						<option value="below18">Below 18</option>
+					  	<option value="18-24">18 - 24</option>
+					  	<option value="25-32">25 - 32</option>
+					  	<option value="33-40">33 - 40</option>
+					  	<option value="over40">Over 40</option>
+					</select><br>
+					<h4>Question 22:</h4>
+					What is your highest level of education? 
+					<select id="s_22">
+						<option value="highschool">High School</option>
+					  	<option value="undergraduate">Undergraduate</option>
+					  	<option value="bachelor">Bachelor Degree</option>
+					  	<option value="master">Master Degree</option>
+					  	<option value="doctorate">Doctorate Degree</option>
+					  	<option value="null">Prefer not to answer</option>
+					</select><br>
+					<h4>Question 23:</h4>
+					Have you had experience with any e-learning service before?
+					<br>
+					<form id="s_23">
+						<input type="radio" name="s_23" value="yes"> Yes <input type="radio" name="s_23" value="no"> No <input type="radio" name="s_23" value="idk"> I don't know
+					</form>
+					<h4>Question 24:</h4>
+					Does this experiment meet your expectation of demonstrating e-learning experience?
+					<br>
+					<form id="s_24">
+						<input type="radio" name="s_24" value="yes"> Yes <input type="radio" name="s_24" value="no"> No <input type="radio" name="s_24" value="idk"> I don't know
+					</form>
+					<h4>Question 25:</h4>
+					Any further comments / recommendations / etc.?
+					<br>
+					<input type="text" id="s_25">
+					<br>
+					<br>
+					<button id="submitSurvey" onclick="submitSurvey()">Submit</button>
+					<br>
+					<b class="status" id="survey_status">
+						SURVEY HAS BEEN SUBMITTED. THE EXPERIMENT IS NOW COMPLETE.
+						<br>
+						Thank you for your participation. You may now close this windows.
+					</b>
+				</div>
+			</div>
+		</div>
+
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+
+		<script src="index.js"></script>
+	</body>
+</html>
