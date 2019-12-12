@@ -275,14 +275,21 @@ function submitQuiz2(n) {
 // Send quiz result to database
 function completeQuiz(n) {
 	if (n == 1) {
+		// By default save result of quiz, in case participants forgot to press "Submit"
+		submitQuiz1(1);
+		submitQuiz1(2);
+		submitQuiz1(3);
+		submitQuiz1(4);
+
 		// Send result to Firebase
 		quiz1 = {
 			q1: q1_1,
 			q2: q1_2,
 			q3: q1_3,
-			q4: q1_4
+			q4: q1_4,
+			quiz: 1
 		}
-		database.ref(uid + '/quiz1').set(quiz1);
+		database.ref('quiz/quiz1/' + uid).set(quiz1);
 		// Frontend stuffs
 		document.getElementById("p1_complete_status").style.display = "block";
 		document.getElementById("submit1_complete").disabled = true;
@@ -292,14 +299,21 @@ function completeQuiz(n) {
 	}
 
 	if (n == 2) {
+		// By default save result of quiz, in case participants forgot to press "Submit"
+		submitQuiz2(1);
+		submitQuiz2(2);
+		submitQuiz2(3);
+		submitQuiz2(4);
+
 		// Send result to Firebase
 		quiz2 = {
 			q1: q2_1,
 			q2: q2_2,
 			q3: q2_3,
-			q4: q2_4
+			q4: q2_4,
+			quiz: 2
 		}
-		database.ref(uid + '/quiz2').set(quiz2);
+		database.ref('quiz/quiz2/' + uid).set(quiz2);
 		// Frontend stuffs
 		document.getElementById("p2_complete_status").style.display = "block";
 		document.getElementById("submit2_complete").disabled = true;
@@ -348,7 +362,7 @@ function submitSurvey() {
 		q25: document.getElementById("s_25").value
 	}
 
-	database.ref(uid + '/survey').set(survey);
+	database.ref('survey/' + uid).set(survey);
 	// Frontend stuffs
 	document.getElementById("survey_status").style.display = "block";
 	document.getElementById("submitSurvey").disabled = true;
